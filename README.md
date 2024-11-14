@@ -1,2 +1,2 @@
-# Universaty
+# University
 Aprendendo JS
