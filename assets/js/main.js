@@ -21,17 +21,17 @@ document.getElementById("submit").addEventListener("click", function(){
 
     function orgNtAlunos(qt){
         for(let i = 1; i <= qt; i++ ){
-            let ntInforme = Number(prompt(`Qual a nota do ${i} Aluno?`));
+            let ntInforme = Number(prompt(`Qual a nota do ${i}° Aluno?`));
             while (isNaN(ntInforme) || ntInforme > refNt){
                 if(isNaN(ntInforme)){
                     alert("Digite somente números")
-                    ntInforme = Number(prompt(`Qual a nota do ${i} Aluno?`));
+                    ntInforme = Number(prompt(`Qual a nota do ${i}° Aluno?`));
                 } else if(refNt === 10){
                     alert("Digite número até 10")
-                    ntInforme = Number(prompt(`Qual a nota do ${i} Aluno?`));
+                    ntInforme = Number(prompt(`Qual a nota do ${i}° Aluno?`));
                 } else if(refNt === 100){
                     alert("Digite número até 100")
-                    ntInforme = Number(prompt(`Qual a nota do ${i} Aluno?`));
+                    ntInforme = Number(prompt(`Qual a nota do ${i}° Aluno?`));
                 }else{
                     
                 }
