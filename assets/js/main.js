@@ -5,20 +5,46 @@ document.getElementById("submit").addEventListener("click", function(){
 
     let qtDeAluno = parseFloat(document.getElementById("qtAlunos").value)
 
+    let refNt = 0
+
     let ntAlunos = [];
 
     let ntAlunosPassaram = [];
 
     let ntAlunosNPassaram = [];
 
-    function orgNtAlunos(qt){
+    if (mdNtAluno <= 7){
+        refNt = 10
+    } else{
+        refNt = 100
+    }
 
+    function orgNtAlunos(qt){
         for(let i = 1; i <= qt; i++ ){
             let ntInforme = Number(prompt(`Qual a nota do ${i} Aluno?`));
+            while (isNaN(ntInforme) || ntInforme > refNt){
+                if(isNaN(ntInforme)){
+                    alert("Digite somente números")
+                    ntInforme = Number(prompt(`Qual a nota do ${i} Aluno?`));
+                } else if(refNt === 10){
+                    alert("Digite número até 10")
+                    ntInforme = Number(prompt(`Qual a nota do ${i} Aluno?`));
+                } else if(refNt === 100){
+                    alert("Digite número até 100")
+                    ntInforme = Number(prompt(`Qual a nota do ${i} Aluno?`));
+                }else{
+                    
+                }
+            }
             ntAlunos.push(ntInforme)
         }
-        
     }
+
+    //function validarNt(nt){
+    //    alert("Digite somente números")
+    //   ntInforme = Number(prompt(`Qual a nota do ${i} Aluno?`));
+    //}
+
 
     orgNtAlunos(qtDeAluno)
 
