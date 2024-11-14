@@ -13,5 +13,5 @@ Desenvolver um algoritmo para gerenciar as notas de uma turma e determinar quais
 
 Ideia de Fluxograma, baseado no que foi solicitado acima:
 
-![Descrição da imagem](https://github.com/seu-usuario/seu-repositorio/raw/main/assets/images/notas.png)
+![Descrição da imagem](https://github.com/FrugoniMatheus/gerenciarNotas/tree/main/assets/images/notas.png)
 
