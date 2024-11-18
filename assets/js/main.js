@@ -66,6 +66,7 @@ document.getElementById("submit").addEventListener("click", function(){
 
     let newParagraph = document.getElementById("new")
 
-    newParagraph.innerHTML = `<p>Os alunos que passaram foram com as notas <strong>(${ntAlunosPassaram})</strong><br>Os alunos que não passaram foram com as notas <strong>(${ntAlunosNPassaram})</strong></p>`
+     
+    newParagraph.innerHTML = `A quantidade de alunos aprovados foram ${ntAlunosPassaram.length} com as notas <strong>(${ntAlunosPassaram})</strong><br></br> A quantidade de alunos reprovados foram ${ntAlunosNPassaram.length} com as notas <strong>(${ntAlunosNPassaram})</strong></p>`
 })
 
